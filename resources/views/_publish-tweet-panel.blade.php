@@ -1,4 +1,4 @@
-<div class="border border-blue-400 rounded-lg p-8">
+<div class="border border-blue-400 rounded-lg px-8 py-6 mb-8">
                 <form action="" method="post">
                     <textarea 
                         name="" 
@@ -9,7 +9,7 @@
                         
                         </textarea>
 
-                        <hr class="py-4">
+                        <hr class="my-4">
                         <footer class="flex justify-between">
                             <img 
                                 src="https://i.pravatar.cc/40" 
