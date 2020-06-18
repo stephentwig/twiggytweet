@@ -23,7 +23,7 @@
     <div id="app">
       <section class="px-8 py-4">
         <header class="container mx-auto">
-          <h1> <img src="/images/logo.png" alt="TwiggyTweet"></h1>
+          <h1> <img src="/images/logo.png" height="5%" width="5%" alt="TwiggyTweet"></h1>
         </header>
     </section>
 
