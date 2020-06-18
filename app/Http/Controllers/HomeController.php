@@ -14,14 +14,4 @@ class HomeController extends Controller
     }
 
 
-    public function index()
-    {
-        // to the get the latest tweets first
-       // $tweets = Tweet::latest()->get();
-
-        return view('home',[
-            //user() is being called from the Tweet model
-            'tweets' => auth()->user()->timeline()
-        ]);
-    }
 }
