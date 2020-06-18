@@ -17,8 +17,21 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::post('/tweets', 'TweetController@store');
+
+
+// to prevent guests from accessing
+Route::middleware('auth')->group(function () {
+
+    // to view all the tweets
+    Route::get('/tweets', 'TweetController@index')->name('home');
+
+    // to store the tweet
+    Route::post('/tweets', 'TweetController@store');
+
+});
+
+
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+
