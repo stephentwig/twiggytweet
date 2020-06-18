@@ -2,7 +2,7 @@
                 <form action="/tweets" method="post">
                     @csrf
                     <textarea 
-                        name="" 
+                        name="body" 
                         id="" 
                         class="w-full"
                         placeholder="What's on your mind?"
@@ -22,4 +22,14 @@
                         </footer>
 
                 </form>
+
+                
+                @error('body')
+
+                   <p class="text-red" style="color:red; font-size:10px">
+                   {{ $message}}
+                   </p> 
+
+                @enderror
+               
             </div>
