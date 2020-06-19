@@ -13,7 +13,7 @@ To run my partially built laravel project
 - boot the server run >> php artisan serve
 - run >> php artisan tinker
 - run the UserFactory.php to seed the db with 2 users run >> factory('App\User',2)->create();
-- run the TweetFactory.php to seed the db with 3 tweets, run >> factory('Tweet\User',3)->create(['user_id'=>1]);
+- run the TweetFactory.php to seed the db with 3 tweets, run >> factory('App\Tweet',3)->create(['user_id'=>1]);
 
 That's it!
 
