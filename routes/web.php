@@ -1,5 +1,7 @@
 <?php
 
+//to get the actual DB query
+//DB:listen(function ($query) {var_dump($query->sql, $query->bindings); });
 use Illuminate\Support\Facades\Route;
 
 /*
